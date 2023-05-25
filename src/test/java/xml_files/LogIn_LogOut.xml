@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="utilities.Listeners"/>
+    </listeners>
+
+    <test verbose="1" preserve-order="true"
+
+          name="Log In and Log Out Tests ">
+
+        <classes>
+            <class name="tests.LogOutTest">
+                <methods>
+                    <include name="testLogOut"/>
+                    <include name="testLogIn"/>
+                </methods>
+
+            </class>
+        </classes>
+
+    </test>
+</suite>
+
+
